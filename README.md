@@ -7,7 +7,7 @@ By simply entering the necessary information, anyone can create a donation link.
 $ npm install
 $ npm run dev
 
-$ open http://localhost:50020
+$ open http://localhost:3000
 ```
 
 ## production
