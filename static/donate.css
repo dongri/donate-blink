@@ -1,0 +1,77 @@
+.donate {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.url {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.input-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button.post {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+button.post:hover {
+  background-color: #f1f1f1;
+}
+button.label {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+button.label:hover {
+  background-color: #0056b3;
+}
+.preview {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.preview img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.preview .amounts button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+}
+.preview .amounts button:hover {
+  background-color: #0056b3;
+}
+
+.create {
+  margin: 30px;
+  text-align: center;
+}

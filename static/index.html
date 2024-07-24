@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <title>Donate</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="header">
+    Solana Blink
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="form">
+        <h1 style="text-align: center;">Donate to Me</h1>
+        <div class="form-group">
+          <label for="icon">Icon URL:</label>
+          <input type="text" id="icon" placeholder="Enter icon URL" oninput="updatePreview()">
+          <div class="error-message" id="icon-error">Icon URL is required</div>
+        </div>
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" placeholder="Enter title" oninput="updatePreview()">
+          <div class="error-message" id="title-error">Title is required</div>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" placeholder="Enter description" oninput="updatePreview()">
+          <div class="error-message" id="description-error">Description is required</div>
+        </div>
+        <div class="form-group">
+          <label for="amount_options">Amount Options (comma separated):</label>
+          <input type="text" id="amount_options" placeholder="Enter amount options" oninput="updatePreview()">
+          <div class="error-message" id="amount-options-error">Amount Options are required</div>
+        </div>
+        <div class="form-group">
+          <label for="label">Label:</label>
+          <input type="text" id="label" placeholder="Enter label" oninput="updatePreview()">
+          <div class="error-message" id="label-error">Label is required</div>
+        </div>
+        <div class="form-group">
+          <label for="address">Wallet Address:</label>
+          <input type="text" id="address" placeholder="Enter solana address" oninput="updatePreview()">
+          <div class="error-message" id="address-error">Address is required</div>
+        </div>
+        <button onclick="generateLink()">Generate Link</button>
+      </div>
+      <div class="preview">
+        <img id="preview-icon" src="" alt="Icon Preview">
+        <h2 id="preview-title" class="title">Title</h2>
+        <p class="description" id="preview-description">Description</p>
+        <div class="amounts" id="preview-amounts"></div>
+        <div class="custom-amount" id="custom-amount">
+          <input type="text" placeholder="Enter custom amount">
+          <button id="preview-label" class="label">Label</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

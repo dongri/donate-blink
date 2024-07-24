@@ -1,0 +1,28 @@
+{
+  "name": "donate-blink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^1.11.3",
+    "@hono/swagger-ui": "^0.3.0",
+    "@hono/zod-openapi": "^0.14.5",
+    "@solana/actions": "^1.0.2",
+    "@solana/web3.js": "^1.91.8",
+    "dotenv": "^16.4.5",
+    "hono": "^4.4.7",
+    "typed-htmx": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^20.11.17",
+    "prettier": "^3.3.2",
+    "tsx": "^4.7.1"
+  }
+}
